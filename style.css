@@ -21,7 +21,6 @@
     display: flex;
     align-items: center;
 }
-
 a {
     color: black;
 }
@@ -30,7 +29,39 @@ a {
     padding: 10px 20px;
     align-items: center;
 }
-
 .button a {
     color: white;
+}
+/*Burger menu*/
+.container-burger-menu,
+.button-burger-menu,
+.container-burger-menu,
+.close-burger-menu {
+    display: none;
+}
+
+.content-menu div{
+    position: relative;
+    top: 0;
+    right: 0;
+}
+/*Mediaqueries*/
+@media only screen and (max-width: 768px) {
+    .container-menu li{
+        display: none;
+    }
+    .button-burger-menu {
+        display: flex;
+        width: 30px;
+        margin: 15px;
+    }
+    .close-burger-menu {
+        height: 40px;
+        margin: 10px;
+    }
+    .show-menu{
+        display: block;
+        margin: 50px;
+        line-height: 70px;
+    }
 }
