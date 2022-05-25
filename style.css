@@ -11,7 +11,7 @@
     position: relative;
     display: flex;
     justify-content: flex-end;
-    border-bottom: 1px solid rgba(210, 210, 210, 0.25);
+    border-bottom: 2px solid rgba(210, 210, 210, 0.25);
 }
 .menul {
     display: flex;
@@ -47,9 +47,6 @@ a {
 }
 /*Mediaqueries*/
 @media only screen and (max-width: 768px) {
-    .container-menu li{
-        display: none;
-    }
     .button-burger-menu {
         display: flex;
         width: 30px;
@@ -61,7 +58,20 @@ a {
     }
     .show-menu{
         display: block;
-        margin: 50px;
         line-height: 70px;
+        background-color: darkslateblue;
+        color: white;
+        text-decoration: underline;
     }
+    .menul {
+        display: none;
+    }
+}
+/*Displaycross*/
+.display-none {
+    display: none;
+}
+
+.display-block {
+    display: block;
 }
